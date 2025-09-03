@@ -25,8 +25,6 @@ tusb_desc_device_t desc_device;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  Serial1.begin(115200);
-
   Serial.begin(115200);
   while (!Serial)
     delay(10);  // wait for native usb
